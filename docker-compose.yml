@@ -20,6 +20,8 @@ services:
     depends_on:
       - db
       - chrome
+    environment:
+      - EDITOR=vim
   chrome:
     image: selenium/standalone-chrome:latest
     ports:

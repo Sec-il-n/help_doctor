@@ -23,6 +23,8 @@ RUN apt-get update && apt-get install -y unzip && \
 RUN mkdir /help_doctor
 ENV APP_ROOT /help_doctor
 WORKDIR $APP_ROOT
+ARG RAILS_MASTER_KEY
+ENV RAILS_MASTER_KEY ${RAILS_MASTER_KEY}
 
 COPY Gemfile $APP_ROOT/Gemfile
 COPY Gemfile.lock $APP_ROOT/Gemfile.lock

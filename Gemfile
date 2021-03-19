@@ -14,10 +14,9 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 4.0'
 # gem 'bcrypt', '~> 3.1.7'
-
 # gem 'mini_magick', '~> 4.8'
-
 # gem 'capistrano-rails', group: :development
+gem 'geocoder', '~> 1.6', '>= 1.6.6'
 
 gem 'bootsnap', '>= 1.1.0', require: false
 
@@ -29,6 +28,7 @@ group :development, :test do
   gem 'pry-rails'
   gem 'pry-nav'
   gem 'launchy'
+  gem 'dotenv-rails'
   # gem 'rails-controller-testing'
 end
 
