@@ -13,10 +13,15 @@ gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 4.0'
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.7'
 # gem 'mini_magick', '~> 4.8'
 # gem 'capistrano-rails', group: :development
 gem 'geocoder', '~> 1.6', '>= 1.6.6'
+gem 'devise'
+gem 'omniauth-twitter'
+gem 'rails-i18n'
+gem 'devise-i18n'
+gem 'devise-i18n-views'
 
 gem 'bootsnap', '>= 1.1.0', require: false
 
@@ -26,6 +31,7 @@ group :development, :test do
   gem 'factory_bot_rails'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'pry-rails'
+  gem 'pry-byebug'
   gem 'pry-nav'
   gem 'launchy'
   gem 'dotenv-rails'
@@ -37,6 +43,7 @@ group :development do
   gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'letter_opener_web'
 end
 
 group :test do

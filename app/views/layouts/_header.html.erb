@@ -1,0 +1,8 @@
+
+<% if user_signed_in? %>
+<%# destroy_user_session_pathにするとエラーになる %>
+  <%= link_to 'ログアウト', signout_path, method: :delete %>
+<% else %>
+  <%= link_to 'ユーザー登録', new_user_registration_path %>
+  <%= link_to 'ログイン', login_path %>
+<% end %>
